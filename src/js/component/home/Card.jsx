@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 
 export const Card = ({
   id,
@@ -14,13 +15,16 @@ export const Card = ({
                   className="img-fluid rounded-start p-4"
                   alt="..."
             />
-            <div class="card-body r">
-                <h3 class="card-title d-flex justify-content-center">{title}</h3>
-                <p class="card-text">{context}</p>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            <div className="card-body r">
+                <h3 className="card-title d-flex justify-content-center">{title}</h3>
+                <p className="card-text">{context}</p>
+                <div className="d-flex justify-content-center align-items-center">
+                  <div className="btn-group">
+                    <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                    {/* <Link to={`cardservices/${id}`} className="btn btn-sm btn-outline-secondary">
+                            Edit
+      
+                    </Link> */}
                   </div>
                 </div>
               </div>
